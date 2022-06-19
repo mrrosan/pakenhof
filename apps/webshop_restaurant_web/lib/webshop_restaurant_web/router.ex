@@ -58,7 +58,7 @@ defmodule WebshopRestaurantWeb.Router do
     get "/my_orders", OrderController, :my_orders
     resources "/orders", OrderController, only: [:show]
     get "/discount_code", CartController, :discount_form
-    post "/discount_code/:code", CartController, :apply_discount
+    post "/discount_code", CartController, :apply_discount
 
   end
 

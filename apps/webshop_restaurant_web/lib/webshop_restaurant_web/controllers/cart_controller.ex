@@ -76,7 +76,7 @@ defmodule WebshopRestaurantWeb.CartController do
         product_cart.product
       end)
   end
-  
+
   defp cart_params([]) do
     %{number_of_products: 0, total_price: 0}
   end

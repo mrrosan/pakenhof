@@ -1,4 +1,4 @@
-<%= form_for @changeset, @action, fn f -> %>
+<%= form_for @changeset, Routes.cart_path(@conn, :apply_discount), fn f -> %>
   <%= if @changeset.action do %>
     <div class="alert alert-danger">
       <p><%=gettext "Oops, something went wrong! Please check the errors below." %></p>
