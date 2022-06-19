@@ -1,0 +1,22 @@
+<h2><%=gettext "Login Page" %></h2>
+
+<%= form_for @changeset, @action, fn f -> %>
+
+<div class="form-group">
+    <%= label f, :email, gettext("E-mail"), class: "control-label" %>
+    <%= text_input f, :email, class: "form-control" %>
+    <%= error_tag f, :email %>
+</div>
+
+<div class="form-group">
+    <%= label f, :password, gettext("Password"), class: "control-label" %>
+    <%= password_input f, :password, class: "form-control" %>
+    <%= error_tag f, :password %>
+</div>
+
+<div class="form-group">
+    <%= submit gettext("Login"), class: "btn btn-primary" %>
+</div>
+<% end %>
+
+<a href="/signup"><%=gettext "Sign up"%></a>

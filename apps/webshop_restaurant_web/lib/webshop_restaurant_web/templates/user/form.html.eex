@@ -1,0 +1,47 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p><%= gettext "Oops, something went wrong! Please check the errors below." %></p>
+    </div>
+  <% end %>
+
+  <%= label f, :firstname, gettext "Firstname" %>
+  <%= text_input f, :firstname %>
+  <%= error_tag f, :firstname %>
+
+  <%= label f, :lastname, gettext "Lastname"  %>
+  <%= text_input f, :lastname %>
+  <%= error_tag f, :lastname %>
+
+  <%= label f, :email, gettext "E-mail"  %>
+  <%= text_input f, :email %>
+  <%= error_tag f, :email %>
+
+  <%= label f, :password, gettext "Password"  %>
+  <%= password_input f, :password %>
+  <%= error_tag f, :password %>
+
+  <%= label f, :role, gettext "Role"  %>
+  <%= select f, :role, @acceptable_roles %>
+  <%= error_tag f, :role %>
+
+  <%= label f, :address, gettext "Address"  %>
+  <%= text_input f, :address %>
+  <%= error_tag f, :address %>
+
+  <%= label f, :house_number, gettext "House number"  %>
+  <%= number_input f, :house_number %>
+  <%= error_tag f, :house_number %>
+
+  <%= label f, :city, gettext "City"  %>
+  <%= text_input f, :city %>
+  <%= error_tag f, :city %>
+
+  <%= label f, :postal_code, gettext "Postal Code"  %>
+  <%= text_input f, :postal_code %>
+  <%= error_tag f, :postal_code %>
+
+  <div>
+    <%= submit gettext("Save") %>
+  </div>
+<% end %>

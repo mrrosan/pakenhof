@@ -1,0 +1,24 @@
+<h1>My Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order id</th>
+      <th>Total price</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for order <- @orders do %>
+    <tr>
+      <td><%= order.id %></td>
+      <td><%= order.total_price %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.order_path(@conn, :show, order) %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

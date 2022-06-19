@@ -1,0 +1,446 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:46
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:26
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:28
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:9
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:25
+msgid "Address"
+msgstr "Adres"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/cart/show.html.eex:40
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:21
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:32
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:31
+msgid "Are you sure?"
+msgstr "Ben je zeker?"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/edit.html.eex:5
+#: lib/webshop_restaurant_web/templates/category/new.html.eex:5
+#: lib/webshop_restaurant_web/templates/category/show.html.eex:18
+#: lib/webshop_restaurant_web/templates/product/edit.html.eex:5
+#: lib/webshop_restaurant_web/templates/product/new.html.eex:5
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:29
+#: lib/webshop_restaurant_web/templates/user/edit.html.eex:5
+#: lib/webshop_restaurant_web/templates/user/new.html.eex:5
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:46
+msgid "Back"
+msgstr "Terug"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:56
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:34
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:36
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:11
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:35
+msgid "City"
+msgstr "Stad"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:21
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:32
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:31
+msgid "Delete"
+msgstr "Verwijder"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/cart/show.html.eex:7
+#: lib/webshop_restaurant_web/templates/category/form.html.eex:12
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:7
+#: lib/webshop_restaurant_web/templates/category/show.html.eex:11
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:7
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:20
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:8
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:16
+msgid "Description"
+msgstr "Omschrijving"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/session/new.html.eex:6
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:18
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:16
+msgid "E-mail"
+msgstr "E-mail"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:20
+#: lib/webshop_restaurant_web/templates/category/show.html.eex:17
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:31
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:27
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:30
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:45
+msgid "Edit"
+msgstr "Bewerken"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/product/edit.html.eex:1
+msgid "Edit Product"
+msgstr "Product Bewerken"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/user/edit.html.eex:1
+msgid "Edit User"
+msgstr "Gebruiker Bewerken"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:41
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:7
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:15
+msgid "Email"
+msgstr "E-mail"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:31
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:10
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:8
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:5
+msgid "Firstname"
+msgstr "Voornaam"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:51
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:30
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:32
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:10
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:30
+msgid "House number"
+msgstr "Huis nummer"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:36
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:14
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:12
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:10
+msgid "Lastname"
+msgstr "Naam"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:1
+msgid "Listing Products"
+msgstr "Lijst Producten"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:1
+msgid "Listing Users"
+msgstr "Lijst Gebruikers"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:31
+#: lib/webshop_restaurant_web/templates/session/new.html.eex:18
+msgid "Login"
+msgstr "Inloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/session/new.html.eex:1
+msgid "Login Page"
+msgstr "Login Pagina"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/cart/show.html.eex:5
+#: lib/webshop_restaurant_web/templates/category/form.html.eex:8
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:6
+#: lib/webshop_restaurant_web/templates/category/show.html.eex:6
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:5
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:8
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:6
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:6
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:6
+msgid "Name"
+msgstr "Naam"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:41
+#: lib/webshop_restaurant_web/templates/product/new.html.eex:1
+msgid "New Product"
+msgstr "Product Toevoegen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:38
+msgid "New User"
+msgstr "Gebruiker aanmaken"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/form.html.eex:4
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:4
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:6
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:4
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "Oeps! Er is iets misgegaan! Controleer de onderstaande fouten."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/session/new.html.eex:12
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:22
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:20
+msgid "Password"
+msgstr "Wachtwoord"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:40
+msgid "Postal Code"
+msgstr "Postbus"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:61
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:38
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:12
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:40
+msgid "Postal code"
+msgstr "Postbus"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/cart/show.html.eex:6
+#: lib/webshop_restaurant_web/templates/order/show.html.eex:6
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:12
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:7
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:11
+msgid "Price"
+msgstr "Prijs"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:24
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:9
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:21
+msgid "Quantity"
+msgstr "Quantiteit"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:24
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:8
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:20
+msgid "Role"
+msgstr "Rol"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/form.html.eex:17
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:29
+#: lib/webshop_restaurant_web/templates/user/form.html.eex:45
+msgid "Save"
+msgstr "Opslaan"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:19
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:29
+#: lib/webshop_restaurant_web/templates/user/index.html.eex:29
+msgid "Show"
+msgstr "Tonen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/product/show.html.eex:1
+msgid "Show Product"
+msgstr "Product Tonen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/user/show.html.eex:1
+msgid "Show User"
+msgstr "Gebruiker Tonen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/session/new.html.eex:22
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:43
+#: lib/webshop_restaurant_web/templates/user/new.html.eex:1
+msgid "Sign up"
+msgstr "Schrijf in "
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/session/signup.html.eex:1
+msgid "Signup Page"
+msgstr "Inschrijvings Pagina"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/edit.html.eex:1
+msgid "Edit Category"
+msgstr "Categorie Bewerken"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:1
+msgid "Listing Categories"
+msgstr "Lijst Categoriën"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/index.html.eex:28
+#: lib/webshop_restaurant_web/templates/category/new.html.eex:1
+msgid "New Category"
+msgstr "Categorie Toevoegen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/category/show.html.eex:1
+msgid "Show Category"
+msgstr "Category Tonen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:19
+#: lib/webshop_restaurant_web/templates/product/form.html.eex:16
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:10
+msgid "Category"
+msgstr "Categorie"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/controllers/product_controller.ex:24
+msgid "Product created successfully."
+msgstr "Product succesvol aangemaakt."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/controllers/cart_controller.ex:90
+#: lib/webshop_restaurant_web/controllers/product_controller.ex:66
+msgid "Product deleted successfully."
+msgstr "Product succesvol verwijderd."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/controllers/product_controller.ex:51
+msgid "Product updated successfully."
+msgstr "Product succesvol bijgewerkt."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/controllers/category_controller.ex:27
+msgid "Category created successfully."
+msgstr "Categorie succesvol aangemaakt."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/controllers/category_controller.ex:65
+msgid "Category deleted successfully."
+msgstr "Categorie succesvol verwijderd."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/controllers/category_controller.ex:52
+msgid "Category updated successfully."
+msgstr "Categorie succesvol bijgewerkt."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/controllers/session_controller.ex:63
+#: lib/webshop_restaurant_web/controllers/user_controller.ex:25
+msgid "User created successfully."
+msgstr "Gebruiker succesvol aangemaakt."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/controllers/user_controller.ex:66
+msgid "User deleted successfully."
+msgstr "Gebruiker succesvol verwijderd."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/controllers/user_controller.ex:53
+msgid "User updated successfully."
+msgstr "Gebruiker succesvol bijgewerkt."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/controllers/session_controller.ex:34
+msgid "Welcome back!"
+msgstr "Welkom terug!"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/product/index.html.eex:27
+msgid "Add to cart"
+msgstr "Voeg toe aan winkelmandje"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:19
+msgid "Contact Information"
+msgstr "Contactgegevens"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:11
+msgid "Monday closed"
+msgstr "Maandag gesloten"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:8
+msgid "Opening hours"
+msgstr "Openingsuren"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:14
+msgid "Other days from 10AM to 11PM"
+msgstr "Andere dagen open vanaf 10u tot 23u"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:22
+msgid "Pakenstraat 61, 3001 Heverlee"
+msgstr "Pakenstraat 61, 3001 Heverlee"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/cart/show.html.eex:19
+msgid "Remove"
+msgstr "Verwijder"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:3
+msgid "The %{name} is a brasserie where everyone is welcome for a cozy atmosphere, good food and a drink to relax."
+msgstr "Het %{name} is een brasserie waar iedereen van harte welkom is voor een gezellige sfeer, een lekker eten en een drankje om even uit te blazen."
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:25
+msgid "To reserve your seat : %{telephone_number}"
+msgstr "Om te reserveren : %{telephone_number}"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:2
+msgid "Welcome at %{name}!"
+msgstr "Welkom bij %{name}!"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/page/index.html.eex:28
+msgid "You can also mail us: %{email}"
+msgstr "Je kunt ons ook mailen: %{email}"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:20
+msgid "All Orders"
+msgstr "Alle Bestellingen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:28
+msgid "Cart"
+msgstr "Winkelmandje"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:38
+msgid "Dutch"
+msgstr "Nederlands"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:37
+msgid "English"
+msgstr "Engels"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:16
+msgid "Home"
+msgstr "Home"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:29
+msgid "Logout"
+msgstr "Uitloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:26
+msgid "My Orders"
+msgstr "Mijn Bestellingen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/controllers/order_controller.ex:52
+msgid "Order created successfully."
+msgstr "Gebruiker succesvol aangemaakt."
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:24
+msgid "Product"
+msgstr "Producten"
+
+#, elixir-autogen, elixir-format
+#: lib/webshop_restaurant_web/templates/layout/app.html.eex:21
+msgid "Users"
+msgstr "Gebruikers"

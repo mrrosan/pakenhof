@@ -1,0 +1,32 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome at %{name}!", name: "Brasserie Pakenhof" %></h1>
+  <p><%= gettext "The %{name} is a brasserie where everyone is welcome for a cozy atmosphere, good food and a drink to relax.", name: "Pakenhof"%></p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2><%= gettext "Opening hours"%></h2>
+    <ul>
+      <li>
+        <%= gettext "Monday closed"%>
+      </li>
+      <li>
+        <%= gettext "Other days from 10AM to 11PM"%>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2><%= gettext "Contact Information"%></h2>
+    <ul>
+      <li>
+        <%= gettext "Pakenstraat 61, 3001 Heverlee"%>
+      </li>
+      <li>
+        <%= gettext "To reserve your seat : %{telephone_number}", telephone_number: "016 40 75 36"%>
+      </li>
+      <li>
+        <%= gettext "You can also mail us: %{email}", email: "info@pakenhof.be"%>
+      </li>
+    </ul>
+  </article>
+</section>

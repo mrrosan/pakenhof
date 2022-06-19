@@ -1,0 +1,46 @@
+<h1><%=gettext "Show User"%></h1>
+
+<ul>
+  <li>
+    <strong><%=gettext "Firstname"%>:</strong>
+    <%= @user.firstname %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Lastname"%>:</strong>
+    <%= @user.lastname %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Email"%>:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Role"%>:</strong>
+    <%= @user.role %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Address"%>:</strong>
+    <%= @user.address %>
+  </li>
+
+  <li>
+    <strong><%=gettext "House number"%>:</strong>
+    <%= @user.house_number %>
+  </li>
+
+  <li>
+    <strong><%=gettext "City"%>:</strong>
+    <%= @user.city %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Postal code"%>:</strong>
+    <%= @user.postal_code %>
+  </li>
+</ul>
+
+<span><%= link gettext("Edit"), to: Routes.user_path(@conn, :edit, @user) %></span>
+<span><%= link gettext("Back"), to: Routes.user_path(@conn, :index) %></span>

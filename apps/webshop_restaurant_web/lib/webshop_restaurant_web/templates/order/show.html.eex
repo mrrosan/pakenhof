@@ -1,0 +1,67 @@
+<h1>My Order</h1>
+<table>
+  <thead>
+    <tr>
+      <th><%=gettext "Name"%></th>
+      <th><%=gettext "Price"%></th>
+      <th><%=gettext "Description"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for product <- @products do %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product.price %></td>
+      <td><%= product.description %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<ul>
+  <li>
+    <strong>Total price:</strong>
+    <%= @order.total_price %>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <strong><%=gettext "Firstname"%>:</strong>
+    <%= @user.firstname %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Lastname"%>:</strong>
+    <%= @user.lastname %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Email"%>:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Address"%>:</strong>
+    <%= @user.address %>
+  </li>
+
+  <li>
+    <strong><%=gettext "House number"%>:</strong>
+    <%= @user.house_number %>
+  </li>
+
+  <li>
+    <strong><%=gettext "City"%>:</strong>
+    <%= @user.city %>
+  </li>
+
+  <li>
+    <strong><%=gettext "Postal code"%>:</strong>
+    <%= @user.postal_code %>
+  </li>
+
+</ul>
+
+<span><%= link "Back", to: Routes.order_path(@conn, :my_orders) %></span>

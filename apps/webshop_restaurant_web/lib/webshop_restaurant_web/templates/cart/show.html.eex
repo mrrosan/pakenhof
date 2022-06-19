@@ -1,0 +1,43 @@
+<h1>My Cart</h1>
+<table>
+  <thead>
+    <tr>
+      <th><%=gettext "Name"%></th>
+      <th><%=gettext "Price"%></th>
+      <th><%=gettext "Description"%></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for product <- @products do %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product.price %></td>
+      <td><%= product.description %></td>
+      <td>
+        <span><%= link gettext("Remove"), to: Routes.cart_path(@conn, :delete_product, product.id) %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<ul>
+
+  <li>
+    <strong>Number of products:</strong>
+    <%= @cart.number_of_products %>
+  </li>
+
+  <li>
+    <strong>Total price:</strong>
+    <%= @cart.total_price %>
+  </li>
+
+</ul>
+
+<%= if !Enum.empty?(@products) do %>
+  <span><%= link "Place this order", to: Routes.order_path(@conn, :create_order), data: [confirm: gettext("Are you sure?")] %></span>
+<% end %>
+
+<span><%= link "Back", to: Routes.product_path(@conn, :index) %></span>
