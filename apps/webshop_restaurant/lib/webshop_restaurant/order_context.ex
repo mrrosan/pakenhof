@@ -7,7 +7,7 @@ defmodule WebshopRestaurant.OrderContext do
   alias WebshopRestaurant.Repo
 
   alias WebshopRestaurant.OrderContext.Order
-  
+
   def list_orders(user_id) do
     Order
     |> where([order], order.user_id == ^user_id) #[pc] alias OrderProduct
@@ -60,6 +60,26 @@ defmodule WebshopRestaurant.OrderContext do
     %Order{}
     |> Order.changeset(attrs)
     |> Repo.insert()
+  end
+
+  def apply_discount(discount_code, order_id) do
+    IO.puts discount_code
+    IO.puts order_id
+    if discount_code == "DISCOUNT30" do
+      order = get_order!(order_id)
+      attrs = %{}
+      discount = order.total_price * 0.30;
+      total_price = order.total_price - discount;
+
+
+      attrs = Map.put(attrs, :total_price, total_price)
+
+      order
+      |> Order.changeset(attrs)
+      |> Repo.update()
+    else
+      {:error, %Order{}}
+    end
   end
 
   @doc """

@@ -4,6 +4,7 @@ defmodule WebshopRestaurantWeb.CartController do
   alias WebshopRestaurant.CartContext
   alias WebshopRestaurant.CartContext.Cart
   alias WebshopRestaurant.UserContext.User
+  alias WebshopRestaurant.OrderContext
 
   def index(conn, _params) do
     user =  conn.private.guardian_default_resource
@@ -22,19 +23,24 @@ defmodule WebshopRestaurantWeb.CartController do
     render(conn, "show.html", cart: cart, products: products)
   end
 
-  def discount_form(conn, _) do
+  def discount_form(conn, %{"id" => order_id} = params) do
+    order = WebshopRestaurant.OrderContext.get_order!(order_id)
+    IO.puts "********************************"
+    IO.inspect order
     changeset = CartContext.change_cart(%Cart{})
     IO.puts "_________________________________________________"
     IO.inspect changeset
-    render(conn, "discount.html", changeset: changeset)
+    render(conn, "discount.html", changeset: changeset, order: order)
   end
 
-  def apply_discount(conn, %{"code" => discount_code_params}) do
-    case CartContext.apply_discount(discount_code_params) do
-      {:ok, cart} ->
+  def apply_discount(conn, %{ "cart" => %{"discount_code" => discount_code_params, "order_id" => order_id}} = params) do
+    IO.inspect(discount_code_params)
+    IO.inspect(order_id)
+    case OrderContext.apply_discount(discount_code_params, order_id) do
+      {:ok, order} ->
         conn
         |> put_flash(:info, gettext("Discount applied successfully."))
-        |> redirect(to: Routes.cart_path(conn, :show, cart))
+        |> redirect(to: Routes.order_path(conn, :index))
 
       {:error, %Ecto.Changeset{} = changeset} ->
         conn

@@ -41,7 +41,7 @@ defmodule WebshopRestaurantWeb.OrderController do
     products = fetch_products(products_carts)
     total_price = order_total(products)
     {:ok, order} = OrderContext.create_order(%{total_price: total_price, user_id: user.id})
-    Enum.map(products, fn product -> 
+    Enum.map(products, fn product ->
       OrderContext.create_order_product(%{order_id: order.id, product_id: product.id})
       ProductContext.update_product(product, %{quantity: product.quantity - 1})
       CartContext.delete_cart_product(product.id, cart.id)
@@ -50,7 +50,7 @@ defmodule WebshopRestaurantWeb.OrderController do
     )
     conn
     |> put_flash(:info, gettext("Order created successfully."))
-    |> redirect(to: Routes.page_path(conn, :index))
+    |> redirect(to: Routes.cart_path(conn, :discount_form, order))
   end
 
   defp fetch_products([]) do

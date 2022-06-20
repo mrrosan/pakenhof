@@ -5,11 +5,18 @@
     </div>
   <% end %>
 
+  <h2>Your Total Price is: <%= @order.total_price %></h2>
+
   <%= label f, :discount_code, gettext "Discount Code" %>
   <%= text_input f, :discount_code %>
   <%= error_tag f, :discount_code %>
 
+  <input type="hidden" value="<%=@order.id%>" name="cart[order_id]">
+
   <div>
     <%= submit gettext("Apply") %>
+  </div>
+  <div>
+    <%= link "Discard", to: Routes.order_path(@conn, :index)%>
   </div>
 <% end %>
